@@ -1,0 +1,13 @@
+{
+  "name": "cupcakelivery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "ionic": "cd cupcakelivery && ionic serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Isabella R C",
+  "license": "ISC"
+}
