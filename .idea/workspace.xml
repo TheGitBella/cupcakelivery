@@ -4,24 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4211e41-f445-4cf6-ac69-b31eb2b31f6b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/cupcakelivery/src/app/client/client.page.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cupcakelivery/src/app/client/main/main.page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cupcakelivery/src/app/client/main/main.page.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cupcakelivery/src/app/client/main/main.page.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cupcakelivery/src/assets/image/cover.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="b4211e41-f445-4cf6-ac69-b31eb2b31f6b" name="Changes" comment="chore: alteração das rotas, icones do menu e criação da pasta para inicialização do app">
+      <change afterPath="$PROJECT_DIR$/cupcakelivery/src/app/main/main-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cupcakelivery/src/app/main/main.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cupcakelivery/src/app/main/main.page.spec.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cupcakelivery/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cupcakelivery/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/cupcakelivery/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/src/app/app.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cupcakelivery/src/app/app.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cupcakelivery/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/src/app/folder/folder-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cupcakelivery/src/app/client/client-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/src/app/folder/folder.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cupcakelivery/src/app/client/client.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/src/app/folder/folder.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/cupcakelivery/src/app/client/client.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/src/app/folder/folder.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/cupcakelivery/src/app/client/client.page.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/src/app/folder/folder.page.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cupcakelivery/src/app/client/client.page.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/src/app/folder/folder.page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cupcakelivery/src/app/client/client-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cupcakelivery/src/app/client/client-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cupcakelivery/src/app/client/main/main.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/cupcakelivery/src/app/main/main.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cupcakelivery/src/app/client/main/main.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/cupcakelivery/src/app/main/main.page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cupcakelivery/src/app/client/main/main.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cupcakelivery/src/app/main/main.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cupcakelivery/src/theme/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/cupcakelivery/src/theme/variables.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +44,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "dev",
-    "last_opened_file_path": "C:/Users/auisa/Desktop/UNIFRAN/PIT2/cupcakelivery/src/app/client/main",
+    "last_opened_file_path": "C:/Users/auisa/Desktop/UNIFRAN/PIT2/cupcakelivery/src/app/main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -64,9 +57,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\auisa\Desktop\UNIFRAN\PIT2\cupcakelivery\src\app\main" />
       <recent name="C:\Users\auisa\Desktop\UNIFRAN\PIT2\cupcakelivery\src\app\client\main" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\auisa\Desktop\UNIFRAN\PIT2\cupcakelivery\src\app" />
       <recent name="C:\Users\auisa\Desktop\UNIFRAN\PIT2\cupcakelivery\src\assets\image" />
       <recent name="C:\Users\auisa\Desktop\UNIFRAN\PIT2" />
     </key>
@@ -79,12 +74,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1700093590715</updated>
-      <workItem from="1700093591869" duration="9210000" />
+      <workItem from="1700093591869" duration="20513000" />
     </task>
+    <task id="LOCAL-00001" summary="chore: alteração das rotas, icones do menu e criação da pasta para inicialização do app">
+      <option name="closed" value="true" />
+      <created>1700110952373</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1700110952373</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="chore: alteração das rotas, icones do menu e criação da pasta para inicialização do app" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: alteração das rotas, icones do menu e criação da pasta para inicialização do app" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

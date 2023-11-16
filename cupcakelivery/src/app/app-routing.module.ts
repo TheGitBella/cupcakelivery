@@ -4,18 +4,72 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'client/Inbox',
+    redirectTo: 'main',
     pathMatch: 'full'
+  },
+  {
+    path: '',
+    children: [
+      {
+        path: '',
+        redirectTo: '',
+        pathMatch: 'full'
+      },
+      {
+        path: '',
+        loadChildren: () => import('./main/main.module').then(m => m.MainPageModule)
+      },
+    ]
   },
   {
     path: 'client',
-    redirectTo: 'client/Inbox',
-    pathMatch: 'full'
+    children: [
+      {
+        path: '',
+        redirectTo: 'dashboard',
+        pathMatch: 'full'
+      },
+      {
+        path: 'dashboard',
+        loadChildren: () => import('./client/client.module').then(m => m.ClientPageModule)
+      },
+      {
+        path: ':id',
+        loadChildren: () => import('./client/client.module').then(m => m.ClientPageModule)
+      }
+    ]
   },
-  {
-    path: 'client/:id',
-    loadChildren: () => import('./client/client.module').then(m => m.ClientPageModule)
-  }
+  // Criar parte do vendedor
+/*  {
+    path: 'seller',
+    children: [
+      {
+        path: '',
+        redirectTo: 'dashboard',
+        pathMatch: 'full'
+      },
+      {
+        path: 'dashboard',
+        loadChildren: () => import('./seller/dashboard/dashboard.module').then(m => m.DashboardPageModule)
+      },
+      // Add more seller-specific routes as needed
+    ]
+  },*/
+  // Criar parte do entregador
+/*  {
+    path: 'driver',
+    children: [
+      {
+        path: '',
+        redirectTo: 'dashboard',
+        pathMatch: 'full'
+      },
+      {
+        path: 'dashboard',
+        loadChildren: () => import('./driver/dashboard/dashboard.module').then(m => m.DriverDashboardPageModule)
+      },
+    ]
+  },*/
 ];
 
 @NgModule({
