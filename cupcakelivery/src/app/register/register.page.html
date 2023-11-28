@@ -1,0 +1,73 @@
+<ion-content color="secondary" [fullscreen]="true">
+
+  <div class="container">
+
+    <div class="tittle-box">
+      <ion-button size="small" fill="clear" (click)="goBack()">
+        <ion-icon color="danger" size="large" name="arrow-back-circle-outline"></ion-icon>
+      </ion-button>
+      <ion-title class="tittle" size="large"> Digite seus dados </ion-title>
+    </div>
+
+      <form [formGroup]="registerForm" (ngSubmit)="register()">
+        <div class="input-box">
+          <ion-item lines="none">
+            <ion-input fill="outline"
+                       label="Email"
+                       labelPlacement="floating"
+                       type="email"
+                       errorText="Email inválido"
+                       formControlName="email">
+            </ion-input>
+          </ion-item>
+          <ion-item lines="none">
+            <ion-input fill="outline"
+                       label="Nome"
+                       labelPlacement="floating"
+                       type="text"
+                       errorText="Nome inválido"
+                       formControlName="name">
+            </ion-input>
+          </ion-item>
+          <ion-accordion-group>
+            <ion-accordion value="start">
+              <ion-item slot="header">
+                <ion-label> Data de Nascimento </ion-label>
+              </ion-item>
+              <ion-datetime
+                presentation="date"
+                slot="content"
+                min="1920-01-01"
+                max="2006-01-01"
+                formControlName="birthday">
+              ></ion-datetime>
+            </ion-accordion>
+          </ion-accordion-group>
+
+
+
+
+<!--          <ion-item>
+            <ion-label position="stacked">  </ion-label>
+            <ion-datetime
+              displayFormat="MMMM YY"
+              min="1920-01-01"
+              max="2006-01-01"
+              formControlName="birthday">
+            ></ion-datetime>
+          </ion-item>-->
+        </div>
+        <div class="form-actions">
+          <div class="form-btn">
+            <ion-button color="danger" (click)="register()" [disabled]="!registerForm.valid"> Cadastre-se </ion-button>
+          </div>
+          <div class="toggle-box">
+            <ion-toggle labelPlacement="end">
+              <a href="https://github.com/TheGitBella"> Termos de Uso </a>
+            </ion-toggle>
+          </div>
+        </div>
+      </form>
+  </div>
+</ion-content>
+
