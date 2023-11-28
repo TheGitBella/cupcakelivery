@@ -16,8 +16,17 @@
                        label="Email"
                        labelPlacement="floating"
                        type="email"
-                       errorText="Email inválido"
                        formControlName="email">
+            </ion-input>
+          </ion-item>
+          <ion-item lines="none">
+            <ion-input fill="outline"
+                       label="Celular"
+                       labelPlacement="floating"
+                       type="tel"
+                       maxlength="11"
+                       formControlName="cellphone"
+                       [value]="formatCellphone(registerForm.get('cellphone')?.value)">
             </ion-input>
           </ion-item>
           <ion-item lines="none">
@@ -25,37 +34,57 @@
                        label="Nome"
                        labelPlacement="floating"
                        type="text"
-                       errorText="Nome inválido"
                        formControlName="name">
             </ion-input>
           </ion-item>
-          <ion-accordion-group>
-            <ion-accordion value="start">
-              <ion-item slot="header">
-                <ion-label> Data de Nascimento </ion-label>
-              </ion-item>
-              <ion-datetime
-                presentation="date"
-                slot="content"
-                min="1920-01-01"
-                max="2006-01-01"
-                formControlName="birthday">
-              ></ion-datetime>
-            </ion-accordion>
-          </ion-accordion-group>
-
-
-
-
-<!--          <ion-item>
-            <ion-label position="stacked">  </ion-label>
-            <ion-datetime
-              displayFormat="MMMM YY"
-              min="1920-01-01"
-              max="2006-01-01"
-              formControlName="birthday">
-            ></ion-datetime>
-          </ion-item>-->
+          <ion-item>
+            <ion-input id="birthday"
+                       fill="outline"
+                       label="Data de Nascimento"
+                       labelPlacement="floating"
+                       formControlName="birthday"
+                       value="{{formattedBirthday}}"
+            ></ion-input>
+            <ion-popover trigger="birthday" size="cover" [isOpen]="isOpen">
+              <ng-template>
+                <ion-datetime presentation="date"
+                              (ionChange)="presentPopover($event.detail.value)">
+                </ion-datetime>
+              </ng-template>
+            </ion-popover>
+          </ion-item>
+          <ion-item lines="none">
+            <ion-input fill="outline"
+                       label="CEP"
+                       labelPlacement="floating"
+                       type="number"
+                       formControlName="cep">
+            </ion-input>
+          </ion-item>
+          <ion-item lines="none">
+            <ion-input fill="outline"
+                       label="Endereço"
+                       labelPlacement="floating"
+                       type="text"
+                       formControlName="street">
+            </ion-input>
+          </ion-item>
+          <ion-item lines="none">
+            <ion-input fill="outline"
+                       label="Número"
+                       labelPlacement="floating"
+                       type="number"
+                       formControlName="numberAddress">
+            </ion-input>
+          </ion-item>
+          <ion-item lines="none">
+            <ion-input fill="outline"
+                       label="Senha"
+                       labelPlacement="floating"
+                       type="password"
+                       formControlName="password">
+            </ion-input>
+          </ion-item>
         </div>
         <div class="form-actions">
           <div class="form-btn">

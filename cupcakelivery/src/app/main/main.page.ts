@@ -35,11 +35,12 @@ export class MainPage implements OnInit {
   }
 
   register() {
-    if (this.loginForm.valid) {
-      console.log("Registration successful:", this.loginForm.value);
-    } else {
-      console.log("Invalid form");
-    }
+    this.router.navigate(['/register'])
+      .then(nav => {
+        return;
+      }, err => {
+        console.error(err);
+      });
   }
 
   forgetPassword() {
