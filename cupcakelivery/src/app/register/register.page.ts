@@ -11,6 +11,7 @@ import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 export class RegisterPage implements OnInit {
   @ViewChild('popover') popover: { event: Event; } | undefined;
   isOpen: boolean = false;
+  isAllowTerms: boolean = false;
   formattedBirthday: string = '';
   registerForm: FormGroup;
   email: string = '';
@@ -29,9 +30,10 @@ export class RegisterPage implements OnInit {
   ) {
     this.registerForm = this.formBuilder.group({
       email: ['', [Validators.required, Validators.email]],
+      cpf: ['', [Validators.required, Validators.maxLength(11), Validators.minLength(11)]],
       name: ['', [Validators.required, Validators.minLength(6)]],
       birthday: [''],
-      cep: [''],
+      cep: ['', [Validators.required, Validators.maxLength(8), Validators.minLength(8)]],
       street: ['', [Validators.required, Validators.minLength(6)]],
       numberAddress: ['', [Validators.required]],
       cellphone: ['', [Validators.required, Validators.maxLength(11), Validators.minLength(11)]],
@@ -47,11 +49,15 @@ export class RegisterPage implements OnInit {
     this.isOpen = !this.isOpen;
   }
 
-  register() {
-    if (this.registerForm.valid) {
+  onSubmit() {
+    if (!this.isAllowTerms) {
+      console.log("Aceite os termos de uso");
+    }
+    if (this.isAllowTerms && this.registerForm.valid) {
       console.log("Registration successful:", this.registerForm.value);
-    } else {
-      console.log("Invalid form");
+    }
+    else {
+      console.log("Erro ao cadastrar!");
     }
   }
 
@@ -67,5 +73,30 @@ export class RegisterPage implements OnInit {
     } else {
       return cleanCellphone.toString();
     }
+  }
+
+  formatCpf(cpf: number) {
+    const cleanCpf = cpf.toString().replace(/\D/g, '');
+    const match = cleanCpf.toString().match(/^(\d{3})(\d{3})(\d{3})(\d{2})$/);
+    if (match) {
+      return `${match[1]}.${match[2]}.${match[3]}-${match[4]}`;
+    } else {
+      return cleanCpf.toString();
+    }
+  }
+
+  formatCep(cep: number) {
+    const cleanCep = cep.toString().replace(/\D/g, '');
+    const match = cleanCep.toString().match(/^(\d{5})(\d{3})$/);
+    if (match) {
+      return `${match[1]}-${match[2]}`;
+    } else {
+      return cleanCep.toString();
+    }
+  }
+
+  onChangeToggleTerms() {
+    this.isAllowTerms = !this.isAllowTerms;
+    console.log(this.isAllowTerms)
   }
 }

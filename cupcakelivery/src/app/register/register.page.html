@@ -1,4 +1,4 @@
-<ion-content color="secondary" [fullscreen]="true">
+<ion-content color="success" [fullscreen]="true">
 
   <div class="container">
 
@@ -9,8 +9,42 @@
       <ion-title class="tittle" size="large"> Digite seus dados </ion-title>
     </div>
 
-      <form [formGroup]="registerForm" (ngSubmit)="register()">
+      <form [formGroup]="registerForm">
         <div class="input-box">
+          <ion-item lines="none">
+            <ion-input fill="outline"
+                       label="Nome"
+                       labelPlacement="floating"
+                       type="text"
+                       formControlName="name">
+            </ion-input>
+          </ion-item>
+          <ion-item lines="none">
+            <ion-input fill="outline"
+                       label="CPF"
+                       labelPlacement="floating"
+                       type="text"
+                       maxlength="11"
+                       formControlName="cpf"
+                       [value]="formatCpf(registerForm.get('cpf')?.value)">
+            </ion-input>
+          </ion-item>
+          <ion-item lines="none">
+            <ion-input id="birthday"
+                       fill="outline"
+                       label="Data de Nascimento"
+                       labelPlacement="floating"
+                       formControlName="birthday"
+                       value="{{formattedBirthday}}"
+            ></ion-input>
+            <ion-popover trigger="birthday" size="cover" [isOpen]="isOpen">
+              <ng-template>
+                <ion-datetime presentation="date"
+                              (ionChange)="presentPopover($event.detail.value)">
+                </ion-datetime>
+              </ng-template>
+            </ion-popover>
+          </ion-item>
           <ion-item lines="none">
             <ion-input fill="outline"
                        label="Email"
@@ -31,34 +65,12 @@
           </ion-item>
           <ion-item lines="none">
             <ion-input fill="outline"
-                       label="Nome"
-                       labelPlacement="floating"
-                       type="text"
-                       formControlName="name">
-            </ion-input>
-          </ion-item>
-          <ion-item>
-            <ion-input id="birthday"
-                       fill="outline"
-                       label="Data de Nascimento"
-                       labelPlacement="floating"
-                       formControlName="birthday"
-                       value="{{formattedBirthday}}"
-            ></ion-input>
-            <ion-popover trigger="birthday" size="cover" [isOpen]="isOpen">
-              <ng-template>
-                <ion-datetime presentation="date"
-                              (ionChange)="presentPopover($event.detail.value)">
-                </ion-datetime>
-              </ng-template>
-            </ion-popover>
-          </ion-item>
-          <ion-item lines="none">
-            <ion-input fill="outline"
                        label="CEP"
                        labelPlacement="floating"
-                       type="number"
-                       formControlName="cep">
+                       type="text"
+                       maxlength="8"
+                       formControlName="cep"
+                       [value]="formatCep(registerForm.get('cep')?.value)">
             </ion-input>
           </ion-item>
           <ion-item lines="none">
@@ -88,10 +100,10 @@
         </div>
         <div class="form-actions">
           <div class="form-btn">
-            <ion-button color="danger" (click)="register()" [disabled]="!registerForm.valid"> Cadastre-se </ion-button>
+            <ion-button color="danger" (click)="onSubmit()" [disabled]="!registerForm.valid"> Cadastre-se </ion-button>
           </div>
           <div class="toggle-box">
-            <ion-toggle labelPlacement="end">
+            <ion-toggle labelPlacement="end" [checked]="isAllowTerms" (ionChange)="onChangeToggleTerms()">
               <a href="https://github.com/TheGitBella"> Termos de Uso </a>
             </ion-toggle>
           </div>
