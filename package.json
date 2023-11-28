@@ -1,7 +1,7 @@
 {
   "name": "cupcakelivery",
   "version": "1.0.0",
-  "description": "",
+  "description": "Transdisciplinary Integrated Project II for Software Engineering at UNIFRAN",
   "main": "index.js",
   "scripts": {
     "ionic": "cd cupcakelivery && ionic serve",

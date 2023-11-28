@@ -1,8 +1,7 @@
 {
   "name": "cupcakelivery",
   "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "https://ionicframework.com/",
+  "author": "Isabella Ramos Carvalho",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -61,5 +60,5 @@
     "ts-node": "^8.3.0",
     "typescript": "~5.2.2"
   },
-  "description": "An Ionic project"
+  "description": "Transdisciplinary Integrated Project II for Software Engineering at UNIFRAN"
 }

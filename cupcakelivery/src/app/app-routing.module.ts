@@ -22,6 +22,20 @@ const routes: Routes = [
     ]
   },
   {
+    path: 'register',
+    children: [
+      {
+        path: '',
+        redirectTo: 'register',
+        pathMatch: 'full'
+      },
+      {
+        path: '',
+        loadChildren: () => import('./register/register.module').then(m => m.RegisterPageModule)
+      },
+    ]
+  },
+  {
     path: 'client',
     children: [
       {
@@ -39,37 +53,21 @@ const routes: Routes = [
       }
     ]
   },
+  {
+    path: 'delivery-driver',
+    children: [
+      {
+        path: '',
+        redirectTo: 'dashboard',
+        pathMatch: 'full'
+      },
+      {
+        path: 'dashboard',
+        loadChildren: () => import('./delivery-driver/delivery-driver.module').then(m => m.DeliveryDriverPageModule)
+      },
+    ]
+  },
   // Criar parte do vendedor
-/*  {
-    path: 'seller',
-    children: [
-      {
-        path: '',
-        redirectTo: 'dashboard',
-        pathMatch: 'full'
-      },
-      {
-        path: 'dashboard',
-        loadChildren: () => import('./seller/dashboard/dashboard.module').then(m => m.DashboardPageModule)
-      },
-      // Add more seller-specific routes as needed
-    ]
-  },*/
-  // Criar parte do entregador
-/*  {
-    path: 'driver',
-    children: [
-      {
-        path: '',
-        redirectTo: 'dashboard',
-        pathMatch: 'full'
-      },
-      {
-        path: 'dashboard',
-        loadChildren: () => import('./driver/dashboard/dashboard.module').then(m => m.DriverDashboardPageModule)
-      },
-    ]
-  },*/
 ];
 
 @NgModule({
