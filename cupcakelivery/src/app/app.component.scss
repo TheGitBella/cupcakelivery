@@ -1,5 +1,5 @@
 ion-menu ion-content {
-  --background: var(--ion-color-primary, var(--ion-color-secundary, --ion-color-tertiary));
+  --background: var(--ion-color-tertiary, var(--ion-color-tertiary, --ion-color-tertiary));
 }
 
 ion-menu.md ion-content {
@@ -38,7 +38,7 @@ ion-menu.md ion-list#labels-list ion-list-header {
 
   margin-bottom: 18px;
 
-  color: #757575;
+  color: var(--ion-color-danger);
 
   min-height: 26px;
 }

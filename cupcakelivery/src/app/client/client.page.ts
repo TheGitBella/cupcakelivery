@@ -1,4 +1,4 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, inject, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -6,12 +6,31 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: './client.page.html',
   styleUrls: ['./client.page.scss'],
 })
+
 export class ClientPage implements OnInit {
-  public client!: string;
   private activatedRoute = inject(ActivatedRoute);
+  divApp: string = '';
+  tittle: string = '';
+
   constructor() {}
 
   ngOnInit() {
-    this.client = this.activatedRoute.snapshot.paramMap.get('id') as string;
+    this.activatedRoute.paramMap.subscribe(params => {
+      const id = params.get('id');
+      switch (id) {
+        case 'catalog':
+          this.divApp = 'catalog'
+            this.tittle = "VITRINE VIRTUAL"
+          break;
+        case 'profile':
+          this.divApp = 'profile'
+          this.tittle = "Perfil"
+          break;
+        default:
+          this.divApp = ''
+          break;
+      }
+    });
+    console.log(this.divApp)
   }
 }

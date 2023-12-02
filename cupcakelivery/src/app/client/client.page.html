@@ -4,19 +4,18 @@
       <ion-buttons slot="start">
         <ion-menu-button></ion-menu-button>
       </ion-buttons>
-      <ion-title> Título da Página </ion-title>
+      <ion-title> {{ tittle }} </ion-title>
     </ion-toolbar>
   </ion-header>
 
   <ion-content [fullscreen]="true" class="main-box">
-      <div id="container">
-        <app-catalog></app-catalog>
-      </div>
+    <app-profile *ngIf="divApp == 'profile'"></app-profile>
+    <app-catalog *ngIf="divApp == 'catalog'"></app-catalog>
   </ion-content>
 
   <ion-footer class="footer">
     <div class="cellphone">
-      <p class="cell-number"> (99)99999-9999 </p>
+      <p class="cell-number"> (11) 98156-8563 </p>
       <p class="cell-time"> Atendimento das 8h às 18h </p>
     </div>
     <div class="social-media">

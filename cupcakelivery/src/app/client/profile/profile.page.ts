@@ -2,11 +2,11 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { Location } from '@angular/common';
 
 @Component({
-  selector: 'app-catalog',
-  templateUrl: './catalog.page.html',
-  styleUrls: ['./catalog.page.scss'],
+  selector: 'app-profile',
+  templateUrl: './profile.page.html',
+  styleUrls: ['./profile.page.scss'],
 })
-export class CatalogPage implements OnInit {
+export class ProfilePage implements OnInit {
 itensMock = [
   {
     id: 1,

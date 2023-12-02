@@ -7,17 +7,32 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  // typeUser: TypeUserEnum;
-  menuTemplate: any;
   typeUser: 'CLIENT' | 'ADMIN' | 'DELIVERY_DRIVER';
+  usersMock = [
+      {
+        id: 1,
+        name: "Gustavo",
+        typeUser: "CLIENT"
+      },
+      {
+        id: 2,
+        name: "Bella",
+        typeUser: "ADMIN"
+      },
+      {
+        id: 3,
+        name: "Batman",
+        typeUser: "DELIVERY_DRIVER"
+      },
+    ]
 
   public appClientPages = [
-    { title: 'Perfil', url: '/client/profile', icon: 'person' },
-    { title: 'Carrinho', url: '/client/shopping', icon: 'cart' },
-    { title: 'Vitrine Virtual', url: '/client/catalog', icon: 'grid' },
-    { title: 'Detalhes do Pedido', url: '/client/order', icon: 'receipt' },
-    { title: 'Histórico de Pedidos', url: '/client/historic', icon: 'time' },
-    { title: 'Feedback', url: '/client/feedback', icon: 'star' },
+    { title: 'Perfil', tag: 'profile', url: '/client/profile', icon: 'person' },
+    { title: 'Carrinho', tag: 'shopping', url: '/client/shopping', icon: 'cart' },
+    { title: 'Vitrine Virtual', tag: 'catalog', url: '/client/catalog', icon: 'grid' },
+    { title: 'Detalhes do Pedido', tag: 'order', url: '/client/order', icon: 'receipt' },
+    { title: 'Histórico de Pedidos', tag: 'historic', url: '/client/historic', icon: 'time' },
+    { title: 'Feedback', tag: 'feedback', url: '/client/feedback', icon: 'star' },
   ];
 
   public appAdminPages = [

@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { ClientPageRoutingModule } from './client-routing.module';
 
 import { ClientPage } from './client.page';
+import { ProfilePage } from "./profile/profile.page";
 import { CatalogPage } from "./catalog/catalog.page";
 
 @NgModule({
@@ -18,6 +19,7 @@ import { CatalogPage } from "./catalog/catalog.page";
   ],
   declarations: [
     ClientPage,
+    ProfilePage,
     CatalogPage
   ]
 })
