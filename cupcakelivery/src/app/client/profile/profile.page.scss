@@ -1,37 +1,35 @@
 .profile-page {
-  .catalog-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .img-box {
     display: flex;
-    flex-direction: row;
-    background-color: var(--ion-color-tertiary);
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    .catalog-item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-      background-color: var(--ion-color-primary);
-      box-shadow: 0 0 15px var(--ion-color-danger-shade);
-      width: 40%;
-      height: 40%;
-      border-radius: 5px;
-      margin-top: 30px;
-      padding-bottom: 5px;
-      .img-box {
-        border-radius: 5px;
-        border: 5px solid var(--ion-color-primary);
-      }
-      p {
-        padding-top: 5px;
-        height: 36px;
-      }
-      p, strong {
-        margin: 0;
-        font-size: 12px;
-      }
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    margin: 30px auto;
+    overflow: hidden;
+    border-radius: 50%;
+    .img-profile {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
-    .add-btn {
-      --background: var(--ion-color-success);
+  }
+  .user-name {
+    font-size: 20px;
+    color: var(--ion-color-danger);
+  }
+  .user-box {
+    margin: 40px 20px;
+    .user-row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      strong, p {
+        margin: 5px 0 0 10px;
+        color: var(--ion-color-danger);
+      }
     }
   }
 }

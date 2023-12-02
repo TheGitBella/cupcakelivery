@@ -1,6 +1,28 @@
 <ion-content class="profile-page" color="tertiary" [fullscreen]="true">
 
-  <p> HELPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP </p>
+    <div class="img-box">
+      <ion-img class="img-profile" src="./assets/image/cover.jpg" alt="Produto do Carrinho" />
+    </div>
+    <div>
+      <strong class="user-name"> {{ userMock.name }} </strong>
+      <div class="user-box">
+        <div class="user-row">
+          <strong> Data de Nascimento: </strong>
+          <p> {{ userMock.birthday }} </p>
+        </div>
+        <div class="user-row">
+          <strong> E-mail: </strong>
+          <p> {{ userMock.email }} </p>
+        </div>
+        <div class="user-row">
+          <strong> Celular: </strong>
+          <p> {{ userMock.cellphone }} </p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <ion-button> Editar Usuário </ion-button>
+    </div>
 
 </ion-content>
 

@@ -7,28 +7,14 @@ import { Location } from '@angular/common';
   styleUrls: ['./profile.page.scss'],
 })
 export class ProfilePage implements OnInit {
-itensMock = [
-  {
+  userMock = {
     id: 1,
-    product: "Cupcake de Morango",
-    price: 15.50
-  },
-  {
-    id: 2,
-    product: "Cupcake de Pistache",
-    price: 18
-  },
-  {
-    id: 3,
-    product: "Cupcake de Nutella com Ninho",
-    price: 17
-  },
-  {
-    id: 4,
-    product: "Cupcake de Baunilha",
-    price: 12.50
+    name: 'Batman Robinho Shippuden',
+    birthday: '10/10/1959',
+    email: 'gothamcity@gmail.com',
+    cellphone: '(32) 99258-4331',
   }
-]
+
   constructor(
     private location: Location
   ) {}
