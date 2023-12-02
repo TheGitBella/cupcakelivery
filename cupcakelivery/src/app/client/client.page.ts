@@ -22,9 +22,13 @@ export class ClientPage implements OnInit {
           this.divApp = 'catalog'
             this.tittle = "VITRINE VIRTUAL"
           break;
+        case 'shopping':
+          this.divApp = 'shopping'
+          this.tittle = "CARRINHO"
+          break;
         case 'profile':
           this.divApp = 'profile'
-          this.tittle = "Perfil"
+          this.tittle = "PERFIL"
           break;
         default:
           this.divApp = ''
