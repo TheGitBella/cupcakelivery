@@ -1,21 +1,34 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-title>{{ client }}</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">{{ client }}</ion-title>
+<div class="client-container">
+  <ion-header [translucent]="true">
+    <ion-toolbar class="header-box">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title> Título da Página </ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong class="capitalize">{{ client }}</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+  <ion-content [fullscreen]="true" class="main-box">
+      <div id="container">
+        <app-catalog></app-catalog>
+      </div>
+  </ion-content>
+
+  <ion-footer class="footer">
+    <div class="cellphone">
+      <p class="cell-number"> (99)99999-9999 </p>
+      <p class="cell-time"> Atendimento das 8h às 18h </p>
+    </div>
+    <div class="social-media">
+      <ion-button size="small" fill="clear" href="https://github.com/TheGitBella">
+        <ion-icon color="danger" size="large" name="logo-instagram"></ion-icon>
+      </ion-button>
+      <ion-button size="small" fill="clear" href="https://github.com/TheGitBella">
+        <ion-icon color="danger" size="large" name="logo-facebook"></ion-icon>
+      </ion-button>
+      <ion-button size="small" fill="clear" href="https://github.com/TheGitBella">
+        <ion-icon color="danger" size="large" name="logo-whatsapp"></ion-icon>
+      </ion-button>
+    </div>
+  </ion-footer>
+</div>

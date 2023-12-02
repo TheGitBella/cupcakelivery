@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { ClientPageRoutingModule } from './client-routing.module';
 
 import { ClientPage } from './client.page';
+import { CatalogPage } from "./catalog/catalog.page";
 
 @NgModule({
   imports: [
@@ -15,6 +16,9 @@ import { ClientPage } from './client.page';
     IonicModule,
     ClientPageRoutingModule
   ],
-  declarations: [ClientPage]
+  declarations: [
+    ClientPage,
+    CatalogPage
+  ]
 })
 export class ClientPageModule {}

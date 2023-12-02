@@ -8,6 +8,7 @@ ion-content {
       flex-direction: row;
       align-items: center;
       background-color: var(--ion-color-primary);
+      box-shadow: 0px -1px 1px 0px var(--ion-color-danger), 0px -5px 10px 10px var(--ion-color-danger-shade);
       padding: 10px 0;
       .tittle {
         display: flex;
@@ -37,6 +38,7 @@ ion-content {
       }
       .form-actions {
         background-color: var(--ion-color-secondary);
+        box-shadow: 0px 1px 1px 0px var(--ion-color-danger), 0px 5px 10px 10px var(--ion-color-danger-shade);
         display: flex;
         flex-direction: column;
         justify-content: center;

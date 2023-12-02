@@ -4,34 +4,36 @@
       <ion-content>
         <ion-list id="inbox-list">
 
-          <ion-list-header>Inbox</ion-list-header>
+          <ion-list-header>
+            data.name
+          </ion-list-header>
 
-          <ng-template *ngIf="typeUser === 'CLIENT'">
+          <div  *ngIf="typeUser === 'CLIENT'">
             <ion-menu-toggle auto-hide="false" *ngFor="let p of appClientPages; let i = index">
               <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
                 <ion-icon aria-hidden="true" slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
                 <ion-label>{{ p.title }}</ion-label>
               </ion-item>
             </ion-menu-toggle>
-          </ng-template>
+          </div>
 
-          <ng-template *ngIf="typeUser === 'ADMIN'">
-            <ion-menu-toggle auto-hide="false" *ngFor="let p of appClientPages; let i = index">
+          <div *ngIf="typeUser === 'ADMIN'">
+            <ion-menu-toggle auto-hide="false" *ngFor="let p of appAdminPages; let i = index">
               <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
                 <ion-icon aria-hidden="true" slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
                 <ion-label>{{ p.title }}</ion-label>
               </ion-item>
             </ion-menu-toggle>
-          </ng-template>
+          </div>
 
-          <ng-template *ngIf="typeUser === 'DELIVERY_DRIVER'">
-            <ion-menu-toggle auto-hide="false" *ngFor="let p of appClientPages; let i = index">
+          <div *ngIf="typeUser === 'DELIVERY_DRIVER'">
+            <ion-menu-toggle auto-hide="false" *ngFor="let p of appDeliveryDriverPages; let i = index">
               <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
                 <ion-icon aria-hidden="true" slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
                 <ion-label>{{ p.title }}</ion-label>
               </ion-item>
             </ion-menu-toggle>
-          </ng-template>
+          </div>
 
         </ion-list>
 
