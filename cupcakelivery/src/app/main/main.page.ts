@@ -44,7 +44,12 @@ export class MainPage implements OnInit {
   }
 
   forgetPassword() {
-    console.log("Forget password:", this.loginForm.value.email);
+    this.router.navigate(['/in-progress'])
+        .then(nav => {
+          return;
+        }, err => {
+          console.error(err);
+        });
   }
 
 }

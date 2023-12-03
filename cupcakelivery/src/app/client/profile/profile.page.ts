@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { Location } from '@angular/common';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-profile',
@@ -16,21 +17,17 @@ export class ProfilePage implements OnInit {
   }
 
   constructor(
-    private location: Location
+      private router: Router
   ) {}
 
   ngOnInit() {}
 
-  addToKart() {
-    console.log("Adicionado")
-  }
-
-  formatPrice(price: number) {
-    const formattedPrice = new Intl.NumberFormat('pt-BR', {
-      style: 'currency',
-      currency: 'BRL'
-    }).format(price);
-
-    return formattedPrice;
+  editUser() {
+    this.router.navigate(['/register'])
+        .then(nav => {
+          return;
+        }, err => {
+          console.error(err);
+        });
   }
 }

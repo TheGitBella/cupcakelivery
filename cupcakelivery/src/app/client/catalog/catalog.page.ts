@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { Location } from '@angular/common';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-catalog',
@@ -30,7 +31,7 @@ itensMock = [
   }
 ]
   constructor(
-    private location: Location
+      private router: Router
   ) {}
 
   ngOnInit() {}
@@ -46,5 +47,14 @@ itensMock = [
     }).format(price);
 
     return formattedPrice;
+  }
+
+  goToShopping() {
+    this.router.navigate(['/client/shopping'])
+        .then(nav => {
+          return;
+        }, err => {
+          console.error(err);
+        });
   }
 }

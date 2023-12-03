@@ -5,6 +5,9 @@ ion-menu ion-content {
     padding: 0 0 15px 20px;
     --background: var(--ion-color-danger);
     --color: var(--ion-color-tertiary);
+    ion-button {
+      margin-left: 40%;
+    }
   }
 
   ion-item {

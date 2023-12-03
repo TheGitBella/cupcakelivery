@@ -5,7 +5,10 @@
         <ion-list>
 
           <ion-list-header>
-            {{ usersMock[0].name }}
+            <strong> Olá, {{ usersMock[0].name }} </strong>
+              <ion-button (click)="logout()">
+                <ion-icon color="tertiary" size="large" name="power-outline"></ion-icon>
+              </ion-button>
           </ion-list-header>
 
           <div *ngIf="typeUser === 'CLIENT'">

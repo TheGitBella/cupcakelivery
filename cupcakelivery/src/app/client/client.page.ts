@@ -37,7 +37,6 @@ export class ClientPage implements OnInit {
           break;
       }
     });
-    console.log(this.divApp)
   }
 
   goToShopping() {

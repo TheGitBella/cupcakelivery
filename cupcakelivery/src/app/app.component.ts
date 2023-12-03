@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Router} from "@angular/router";
 // import { TypeUserEnum } from "../../../firebase/src/app/models/enums/typeUser.enum";
 
 @Component({
@@ -47,9 +48,19 @@ export class AppComponent {
     { title: 'Histórico de Pedidos', url: '/client/historic', icon: 'time' },
   ];
 /*  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];*/
-  constructor() {
-    // this.typeUser = TypeUserEnum.CLIENT;
+  constructor(
+      private router: Router
+  ) {
     this.typeUser = "CLIENT";
+  }
+
+  logout() {
+    this.router.navigate(['/'])
+        .then(nav => {
+          return;
+        }, err => {
+          console.error(err);
+        });
   }
 
 }

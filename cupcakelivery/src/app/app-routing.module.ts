@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import {InProgressPage} from "./in-progress/in-progress.page";
 
 const routes: Routes = [
   {
@@ -36,11 +37,25 @@ const routes: Routes = [
     ]
   },
   {
+    path: 'in-progress',
+    children: [
+      {
+        path: '',
+        redirectTo: 'in-progress',
+        pathMatch: 'full'
+      },
+      {
+        path: 'in-progress',
+        loadChildren: () => import('./in-progress/in-progress.module').then(m => m.InProgressPageModule)
+      }
+    ]
+  },
+  {
     path: 'client',
     children: [
       {
         path: '',
-        redirectTo: 'catalog',
+        redirectTo: '',
         pathMatch: 'full'
       },
       {
