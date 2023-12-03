@@ -1,0 +1,114 @@
+<ion-content color="success" [fullscreen]="true">
+
+  <div class="container">
+
+    <div class="tittle-box">
+      <ion-button size="small" fill="clear" (click)="goBack()">
+        <ion-icon color="danger" size="large" name="arrow-back-circle-outline"></ion-icon>
+      </ion-button>
+      <ion-title class="tittle" size="large"> Digite seus dados </ion-title>
+    </div>
+
+      <form [formGroup]="registerForm">
+        <div class="input-box">
+          <ion-item lines="none">
+            <ion-input fill="outline"
+                       label="Nome"
+                       labelPlacement="floating"
+                       type="text"
+                       formControlName="name">
+            </ion-input>
+          </ion-item>
+          <ion-item lines="none">
+            <ion-input fill="outline"
+                       label="CPF"
+                       labelPlacement="floating"
+                       type="text"
+                       maxlength="11"
+                       formControlName="cpf"
+                       [value]="formatCpf(registerForm.get('cpf')?.value)">
+            </ion-input>
+          </ion-item>
+          <ion-item lines="none">
+            <ion-input id="birthday"
+                       fill="outline"
+                       label="Data de Nascimento"
+                       labelPlacement="floating"
+                       formControlName="birthday"
+                       value="{{formattedBirthday}}"
+            ></ion-input>
+            <ion-popover trigger="birthday" size="cover" [isOpen]="isOpen">
+              <ng-template>
+                <ion-datetime presentation="date"
+                              (ionChange)="presentPopover($event.detail.value)">
+                </ion-datetime>
+              </ng-template>
+            </ion-popover>
+          </ion-item>
+          <ion-item lines="none">
+            <ion-input fill="outline"
+                       label="Email"
+                       labelPlacement="floating"
+                       type="email"
+                       formControlName="email">
+            </ion-input>
+          </ion-item>
+          <ion-item lines="none">
+            <ion-input fill="outline"
+                       label="Celular"
+                       labelPlacement="floating"
+                       type="tel"
+                       maxlength="11"
+                       formControlName="cellphone"
+                       [value]="formatCellphone(registerForm.get('cellphone')?.value)">
+            </ion-input>
+          </ion-item>
+          <ion-item lines="none">
+            <ion-input fill="outline"
+                       label="CEP"
+                       labelPlacement="floating"
+                       type="text"
+                       maxlength="8"
+                       formControlName="cep"
+                       [value]="formatCep(registerForm.get('cep')?.value)">
+            </ion-input>
+          </ion-item>
+          <ion-item lines="none">
+            <ion-input fill="outline"
+                       label="Endereço"
+                       labelPlacement="floating"
+                       type="text"
+                       formControlName="street">
+            </ion-input>
+          </ion-item>
+          <ion-item lines="none">
+            <ion-input fill="outline"
+                       label="Número"
+                       labelPlacement="floating"
+                       type="number"
+                       formControlName="numberAddress">
+            </ion-input>
+          </ion-item>
+          <ion-item lines="none">
+            <ion-input fill="outline"
+                       label="Senha"
+                       labelPlacement="floating"
+                       type="password"
+                       formControlName="password">
+            </ion-input>
+          </ion-item>
+        </div>
+        <div class="form-actions">
+          <div class="form-btn">
+            <ion-button color="danger" (click)="onSubmit()" [disabled]="!registerForm.valid"> Enviar </ion-button>
+          </div>
+          <div class="toggle-box">
+            <ion-toggle labelPlacement="end" [checked]="isAllowTerms" (ionChange)="onChangeToggleTerms()">
+              <a href="https://github.com/TheGitBella"> Termos de Uso </a>
+            </ion-toggle>
+          </div>
+        </div>
+      </form>
+  </div>
+</ion-content>
+

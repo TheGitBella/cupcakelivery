@@ -1,0 +1,62 @@
+<ion-content color="primary" [fullscreen]="true">
+
+  <div class="container">
+
+    <div class="tittle-box">
+      <ion-title class="tittle" size="large"> CUPCAKELIVERY </ion-title>
+    </div>
+
+    <div class="image-box">
+      <ion-img
+        src="./assets/image/cover.jpg"
+        alt="Imagem com deliciosos cupcakes decorados"
+      ></ion-img>
+    </div>
+      <form [formGroup]="loginForm" (ngSubmit)="login()">
+        <div class="input-box">
+          <ion-item lines="none">
+            <ion-input label="Email"
+                       labelPlacement="floating"
+                       type="email"
+                       errorText="Email inválido"
+                       formControlName="email">
+            </ion-input>
+          </ion-item>
+          <ion-item lines="none">
+            <ion-input label="Senha"
+                       labelPlacement="floating"
+                       type="password"
+                       errorText="Senha inválida"
+                       formControlName="password">
+            </ion-input>
+          </ion-item>
+        </div>
+        <div class="form-actions">
+          <div class="form-btn">
+            <ion-button color="danger" (click)="login()" [disabled]="!loginForm.valid"> Entrar </ion-button>
+            <ion-button color="danger" fill="outline" (click)="register()"> Cadastrar </ion-button>
+          </div>
+          <a (click)="forgetPassword()"> Esqueci minha senha </a>
+        </div>
+      </form>
+  </div>
+</ion-content>
+
+<ion-footer class="footer">
+  <div class="cellphone">
+    <p class="cell-number"> (99)99999-9999 </p>
+    <p class="cell-time"> Atendimento das 8h às 18h </p>
+  </div>
+  <div class="social-media">
+  <ion-button size="small" fill="clear" href="https://github.com/TheGitBella">
+    <ion-icon color="danger" size="large" name="logo-instagram"></ion-icon>
+  </ion-button>
+  <ion-button size="small" fill="clear" href="https://github.com/TheGitBella">
+    <ion-icon color="danger" size="large" name="logo-facebook"></ion-icon>
+  </ion-button>
+  <ion-button size="small" fill="clear" href="https://github.com/TheGitBella">
+    <ion-icon color="danger" size="large" name="logo-whatsapp"></ion-icon>
+  </ion-button>
+  </div>
+</ion-footer>
+

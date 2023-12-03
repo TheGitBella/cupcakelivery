@@ -1,0 +1,10 @@
+.in-progress-page {
+  border: 30px solid var(--ion-color-primary);
+  .img-box {
+    margin-bottom: 100px;
+    border-bottom: 50px solid var(--ion-color-primary);
+  }
+  strong {
+    font-size: 42px;
+  }
+}

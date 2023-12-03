@@ -1,0 +1,33 @@
+ion-menu ion-content {
+  --background: var(--ion-color-success);
+
+  ion-list-header {
+    padding: 0 0 15px 20px;
+    --background: var(--ion-color-danger);
+    --color: var(--ion-color-tertiary);
+    ion-button {
+      margin-left: 40%;
+    }
+  }
+
+  ion-item {
+    --background: var(--ion-color-success);
+    --color: var(--ion-color-danger);
+    &.selected {
+      --background: var(--ion-color-tertiary);
+      --color: var(--ion-color-primary);
+    }
+/*
+    &.selected {
+      --color: var(--ion-color-primary);
+    }
+
+    ion-icon {
+      color: var(--ion-color-danger);
+    }
+
+    &.selected ion-icon {
+      color: var(--ion-color-primary);
+    }*/
+  }
+}

@@ -1,0 +1,41 @@
+<div class="client-container">
+  <ion-header [translucent]="true">
+    <ion-toolbar class="header-box">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title> {{ tittle }} </ion-title>
+      <ion-buttons slot="end">
+        <ion-button (click)="goToShopping()">
+          <ion-icon color="tertiary" size="large" name="cart-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content [fullscreen]="true" class="main-box">
+    <app-profile *ngIf="divApp == 'profile'"></app-profile>
+    <app-shopping *ngIf="divApp == 'shopping'"></app-shopping>
+    <app-catalog *ngIf="divApp == 'catalog'"></app-catalog>
+    <app-in-progress *ngIf="divApp == ''"></app-in-progress>
+  </ion-content>
+
+  <ion-footer class="footer">
+    <div class="cellphone">
+      <p class="cell-number"> (11) 98156-8563 </p>
+      <p class="cell-time"> Atendimento das 8h às 18h </p>
+    </div>
+    <div class="social-media">
+      <ion-button size="small" fill="clear" href="https://github.com/TheGitBella">
+        <ion-icon color="danger" size="large" name="logo-instagram"></ion-icon>
+      </ion-button>
+      <ion-button size="small" fill="clear" href="https://github.com/TheGitBella">
+        <ion-icon color="danger" size="large" name="logo-facebook"></ion-icon>
+      </ion-button>
+      <ion-button size="small" fill="clear" href="https://github.com/TheGitBella">
+        <ion-icon color="danger" size="large" name="logo-whatsapp"></ion-icon>
+      </ion-button>
+    </div>
+  </ion-footer>
+</div>

@@ -1,0 +1,7 @@
+{
+  "name": "cupcakelivery",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
