@@ -5,81 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ab72899-0e09-430c-91ec-7a375aff38ef" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/.browserslistrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/.eslintrc.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/.vscode/extensions.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/.vscode/settings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/angular.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/capacitor.config.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/ionic.config.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/karma.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/app/app-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/app/app.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/app/app.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/app/app.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/app/app.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/app/client/catalog/catalog.page.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/app/client/catalog/catalog.page.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/app/client/catalog/catalog.page.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/app/client/client-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/app/client/client.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/app/client/client.page.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/app/client/client.page.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/app/client/client.page.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/app/client/in-progress/in-progress.page.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/app/client/in-progress/in-progress.page.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/app/client/in-progress/in-progress.page.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/app/client/profile/profile.page.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/app/client/profile/profile.page.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/app/client/profile/profile.page.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/app/client/shopping/shopping.page.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/app/client/shopping/shopping.page.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/app/client/shopping/shopping.page.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/app/delivery-driver/delivery-driver-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/app/delivery-driver/delivery-driver.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/app/delivery-driver/delivery-driver.page.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/app/delivery-driver/delivery-driver.page.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/app/delivery-driver/delivery-driver.page.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/app/in-progress/in-progress-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/app/in-progress/in-progress.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/app/in-progress/in-progress.page.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/app/in-progress/in-progress.page.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/app/in-progress/in-progress.page.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/app/main/main-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/app/main/main.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/app/main/main.page.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/app/main/main.page.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/app/main/main.page.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/app/register/register-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/app/register/register.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/app/register/register.page.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/app/register/register.page.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/app/register/register.page.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/assets/icon/favicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/assets/image/cover.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/assets/shapes.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/environments/environment.prod.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/environments/environment.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/global.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/main.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/polyfills.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/test.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/theme/variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/src/zone-flags.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/tsconfig.app.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/cupcakelivery/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/cupcakelivery/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/cupcakelivery/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cupcakelivery/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cupcakelivery/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cupcakelivery/src/app/in-progress/in-progress-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cupcakelivery/src/app/forget-password/forget-password-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cupcakelivery/src/app/in-progress/in-progress.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cupcakelivery/src/app/forget-password/forget-password.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cupcakelivery/src/app/in-progress/in-progress.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/cupcakelivery/src/app/forget-password/forget-password.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cupcakelivery/src/app/in-progress/in-progress.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/cupcakelivery/src/app/forget-password/forget-password.page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cupcakelivery/src/app/in-progress/in-progress.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cupcakelivery/src/app/forget-password/forget-password.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cupcakelivery/src/app/main/main.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cupcakelivery/src/app/main/main.page.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +20,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/cupcakelivery" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -102,21 +35,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;database.other&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "dev",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "database.other",
+    "ts.external.directory.path": "C:\\Users\\auisa\\Desktop\\UNIFRAN\\PIT2\\cupcakelivery\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
