@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4211e41-f445-4cf6-ac69-b31eb2b31f6b" name="Changes" comment="layout: alterações no css">
+    <list default="true" id="b4211e41-f445-4cf6-ac69-b31eb2b31f6b" name="Changes" comment="feat: adicionado o carrinho de compras">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cupcakelivery/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cupcakelivery/src/app/app-routing.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cupcakelivery/src/app/client/client.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cupcakelivery/src/app/client/client.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cupcakelivery/src/app/client/client.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/cupcakelivery/src/app/client/client.page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cupcakelivery/src/app/client/client.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cupcakelivery/src/app/client/client.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cupcakelivery/src/app/client/shopping/shopping.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/cupcakelivery/src/app/client/shopping/shopping.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cupcakelivery/src/app/client/shopping/shopping.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/cupcakelivery/src/app/client/shopping/shopping.page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cupcakelivery/src/app/client/shopping/shopping.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cupcakelivery/src/app/client/shopping/shopping.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cupcakelivery/src/theme/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/cupcakelivery/src/theme/variables.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +89,7 @@
       <workItem from="1701127781045" duration="7736000" />
       <workItem from="1701348495986" duration="2719000" />
       <workItem from="1701436033857" duration="1784000" />
-      <workItem from="1701528621397" duration="25242000" />
+      <workItem from="1701528621397" duration="31743000" />
     </task>
     <task id="LOCAL-00001" summary="chore: alteração das rotas, icones do menu e criação da pasta para inicialização do app">
       <option name="closed" value="true" />
@@ -134,7 +139,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701559473620</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="feat: adicionado o carrinho de compras">
+      <option name="closed" value="true" />
+      <created>1701560524975</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1701560524976</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,7 +160,8 @@
     <MESSAGE value="feat: correção nas rotas do menu" />
     <MESSAGE value="feat: adicionado o perfil" />
     <MESSAGE value="layout: alterações no css" />
-    <option name="LAST_COMMIT_MESSAGE" value="layout: alterações no css" />
+    <MESSAGE value="feat: adicionado o carrinho de compras" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: adicionado o carrinho de compras" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

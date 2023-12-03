@@ -1,5 +1,5 @@
-import { Component, inject, Input, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Component, inject, OnInit } from '@angular/core';
+import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
   selector: 'app-client',
@@ -9,10 +9,12 @@ import { ActivatedRoute } from '@angular/router';
 
 export class ClientPage implements OnInit {
   private activatedRoute = inject(ActivatedRoute);
-  divApp: string = '';
+  divApp: string = 'catalog';
   tittle: string = '';
 
-  constructor() {}
+  constructor(
+      private router: Router
+  ) {}
 
   ngOnInit() {
     this.activatedRoute.paramMap.subscribe(params => {
@@ -36,5 +38,14 @@ export class ClientPage implements OnInit {
       }
     });
     console.log(this.divApp)
+  }
+
+  goToShopping() {
+    this.router.navigate(['/client/shopping'])
+        .then(nav => {
+          return;
+        }, err => {
+          console.error(err);
+        });
   }
 }

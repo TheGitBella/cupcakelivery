@@ -40,12 +40,8 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        redirectTo: 'dashboard',
+        redirectTo: 'catalog',
         pathMatch: 'full'
-      },
-      {
-        path: 'dashboard',
-        loadChildren: () => import('./client/client.module').then(m => m.ClientPageModule)
       },
       {
         path: ':id',

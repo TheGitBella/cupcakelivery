@@ -2,23 +2,34 @@
 
   <div class="shopping-box" >
 
-    <ion-button> Continuar comprando </ion-button>
+    <ion-button class="btn-continue" color="success" (click)="goToShopping()"> Continuar comprando </ion-button>
 
     <div class="item-box">
-      <ion-img src="./assets/image/cover.jpg" alt="Produto do Carrinho"/>
+      <div class="img-box">
+        <ion-img class="img-product" src="./assets/image/cover.jpg" alt="Produto do Carrinho"/>
+      </div>
       <div class="item-info">
         <strong> Produto </strong>
         <p> R$ 10,00 </p>
-        <ion-list>
-          <ion-item-sliding>
-            <ion-button color="danger"> + </ion-button>
-            <ion-item-options>
-              <ion-button color="danger"> - </ion-button>
-            </ion-item-options>
-          </ion-item-sliding>
-        </ion-list>
       </div>
+      <div class="item-qtde">
+        <ion-button color="primary" class="btn-qtde">
+          <strong> - </strong>
+        </ion-button>
+        <ion-item>
+          <ion-input fill="outline"
+                     type="number">
+          </ion-input>
+        </ion-item>
+        <ion-button color="primary" class="btn-qtde">
+          <strong> + </strong>
+        </ion-button>
+      </div>
+    </div>
 
+    <div class="total-box">
+      <strong> TOTAL </strong>
+      <p> R$ 10,00 </p>
     </div>
 
   </div>
