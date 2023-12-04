@@ -4,27 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ab72899-0e09-430c-91ec-7a375aff38ef" name="Changes" comment="">
+    <list default="true" id="1ab72899-0e09-430c-91ec-7a375aff38ef" name="Changes" comment="fix: correções na pagina de esqueceu a senha">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cupcakelivery/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/src/app/in-progress/in-progress-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cupcakelivery/src/app/forget-password/forget-password-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/src/app/in-progress/in-progress.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cupcakelivery/src/app/forget-password/forget-password.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/src/app/in-progress/in-progress.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/cupcakelivery/src/app/forget-password/forget-password.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/src/app/in-progress/in-progress.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/cupcakelivery/src/app/forget-password/forget-password.page.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cupcakelivery/src/app/in-progress/in-progress.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cupcakelivery/src/app/forget-password/forget-password.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cupcakelivery/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/cupcakelivery/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cupcakelivery/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cupcakelivery/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cupcakelivery/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cupcakelivery/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cupcakelivery/src/app/client/catalog/catalog.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cupcakelivery/src/app/client/catalog/catalog.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cupcakelivery/src/app/client/client.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cupcakelivery/src/app/client/client.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cupcakelivery/src/app/main/main.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cupcakelivery/src/app/main/main.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cupcakelivery/src/app/main/main.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cupcakelivery/src/app/main/main.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cupcakelivery/src/app/register/register.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cupcakelivery/src/app/register/register.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cupcakelivery/src/app/register/register.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cupcakelivery/src/app/register/register.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/cupcakelivery" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -35,22 +48,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "dev",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "database.other",
-    "ts.external.directory.path": "C:\\Users\\auisa\\Desktop\\UNIFRAN\\PIT2\\cupcakelivery\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;database.other&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\auisa\\Desktop\\UNIFRAN\\PIT2\\cupcakelivery\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\auisa\Desktop\UNIFRAN\PIT2" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -61,10 +79,24 @@
       <updated>1701619351073</updated>
       <workItem from="1701619363129" duration="2941000" />
       <workItem from="1701623236783" duration="192000" />
+      <workItem from="1701694060419" duration="11896000" />
     </task>
+    <task id="LOCAL-00001" summary="fix: correções na pagina de esqueceu a senha">
+      <option name="closed" value="true" />
+      <created>1701625477588</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1701625477588</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fix: correções na pagina de esqueceu a senha" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: correções na pagina de esqueceu a senha" />
   </component>
 </project>
