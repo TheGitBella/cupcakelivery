@@ -7,5 +7,5 @@ npm install
 tsc
 3 - Rode o comando para iniciar o backend:
 npm run back
-1 - Rode o comando para iniciar o frontend:
-npm run back
+4 - Rode o comando para iniciar o frontend:
+npm run ionic
